@@ -1,0 +1,33 @@
+header {
+    background-image: url("../../../assets/img/background-01.jpg");
+    background-size: cover;
+    background-position: top center;
+    height: 500px;
+    #header-strip {
+        background-color: rgba(0,0,0,.5);
+        color: #fff;
+        overflow: hidden;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    #header-logo {
+        float: left;
+        width: 10%;
+    }
+    #header-menu {
+        float: right;
+        width: 30%;
+        a {
+            color: rgb(129, 123, 123);
+            text-decoration: none;
+            margin-right: 5%;
+        }
+    }
+    #header-box {
+        width: 25%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
