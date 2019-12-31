@@ -7,6 +7,31 @@
   <title>Sample</title>
 </head>
 <body>
-  <p [ngClass]="text">Hello World</p>
+  <p class="alert-success" *ngIf="names.length > 2">Currently there are more than 2 names!</p>
+  <p class="alert-danger" *ngIf="names.length <= 2">Currently there are less than 2 names left!</p>
+  
+  <ul>
+    <li *ngFor="let i of names">
+      {{i.name}}
+    </li>
+  </ul>
+  <br/>
+  <ul>
+    <li *ngFor="let e of employee">
+      {{e.empID + " " +  e.empName}}
+    </li>
+  </ul>
+  <!-- Table Select->Option -->
+  <select>
+    <option>India</option>
+    <option>America</option>
+  </select>
+  <br/>
+  <p>Heroes:</p>
+  <ul>
+    <li *ngFor="let hero of heroes">
+      {{ hero }}
+    </li>
+  </ul>
 </body>
 </html>
