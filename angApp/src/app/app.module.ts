@@ -7,6 +7,7 @@ import { BasendComponent } from './basend/basend.component';
 import { AppCComponent } from './app-c/app-c.component';
 import { HeaderComponent } from './basend/header/header.component';
 import { VelitComponent } from './basend/velit/velit.component';
+import { FormCtrlComponent } from './form-ctrl/form-ctrl.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { VelitComponent } from './basend/velit/velit.component';
     BasendComponent,
     AppCComponent,
     HeaderComponent,
-    VelitComponent
+    VelitComponent,
+    FormCtrlComponent
   ],
   imports: [
     BrowserModule,
