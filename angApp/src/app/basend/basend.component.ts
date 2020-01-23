@@ -6,10 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./basend.component.scss']
 })
 export class BasendComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+   ngOnInit() {}
+      
 }
