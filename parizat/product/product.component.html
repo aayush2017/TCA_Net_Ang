@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <th>id</th>
+        <th>title</th>
+        <th>price</th>
+        <th>stock</th>
+    </thead>
+    <tbody>
+        <tr *ngFor='let p of product let i=index'  >
+            <td>{{p.id}}</td>
+            <td>{{p.title}}</td>
+            <td>{{p.price}}</td>
+            <td>{{p.stock}}</td>
+            <app-status [color]='getcolor(i)' 
+            (event)='getvalue($event,i)'></app-status>
+        </tr>
+    </tbody>
+</table>
